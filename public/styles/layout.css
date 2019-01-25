@@ -15,11 +15,117 @@ html {
  */
 
 body {
+  padding-top: 100;
   margin: 0;
-  color: #244751;
-  background-color: #eee;
+  color: red;
+background-color:white;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+
+.container {
+  background-color: white;
+}
+.new-tweet {
+  width: 45vw;
+  background-color:lightgrey;
+  margin: 0 auto;
+  text-align: center;
+  color: #244751;
+  text-align: left;
+  border-radius: 6px;
+  padding: 1px 2em 5px 2em;
+}
+
+.all-tweets {  
+  width: 45vw;
+  background-color: white;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 10px;
+  color: #244751;
+  text-align: left;
+}
+
+.tweet {
+  background-color: white;
+  border: 1px solid;
+  border-color: lightgrey;
+  border-radius: 6px;
+  opacity: 0.5;
+  transition: 0.5s;
+  margin-bottom: 10px;
+  max-height: 175px;
+  min-height: 175px;
+}
+
+.tweet-box {
+  padding: 25px 10px 15px 10px;
+  font-size: 17px;
+  border-bottom: 1px solid;
+  border-color: lightgrey;
+}
+
+.tweet:hover {
+  border-color: black;
+  opacity: 1;
+  transition: 0.5s;
+}
+header {
+  width: 100%;
+  height: 30%;
+  background-color: lightgrey;
+  border-radius: 6px 6px 0px 0px;
+}
+
+footer {
+  width: 100%;
+  font-size: 14px;
+  padding: 10px;
+}
+.profile-pic {
+  padding: 10px;
+  border-radius: 20px;
+  height: auto; 
+  width: auto; 
+  max-width: 75px; 
+  max-height: 70px;
+}
+.username {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.icons {
+  display: inline-block;
+  float: right;
+}
+
+.icons .fas{
+  padding: 0px 5px 5px 5px;
+  color: teal;
+}
+.handle {
+  float: right;
+  padding-right: 10px;
+}
+
+#errormsg {
+text-align: center;
+  color: red;
+  font-weight: bold;
+  font-size: 13px;
+  visibility: hidden;
+  border: red solid 1px;
+  border-radius: 6px;
+  background-color: lightpink;
+  margin-bottom: 5px;
+}
+
+/* section
+article
+footer */

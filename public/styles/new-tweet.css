@@ -1,0 +1,21 @@
+.new-tweet {
+    vertical-align: 50%;
+}
+
+h2:after {
+    content:' ';
+    display:block;
+    border:1px solid black;
+    
+}
+
+.counter {
+    float: right;
+    padding-top: 5px;
+    font-style: italic;
+}
+
+.tweet-input {
+    width: 100%;
+    padding: 10px;
+}
