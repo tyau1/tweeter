@@ -50,6 +50,8 @@ $(function () {
                 url: "/tweets",
                 data: serialized
             }).done(function () {
+                $("#tweettext").val("") // clears text input after submission
+                console.log("hello hello hello");
                 // on success, refresh the tweets on the page
                 getAllTweets();
             });
@@ -60,7 +62,6 @@ $(function () {
     //function to create a new Tweet dynamically
     function createTweetElement(
         { user: { name, avatars: { small }, handle }, content: { text }, created_at }) {
-
 
         const createdAt = moment(created_at).fromNow();
 
@@ -80,7 +81,7 @@ $(function () {
     } //function to create the Tweet dynamically ends here
 
     const composeButton = $('.compose-button')
-    $('<i class="far fa-edit"></i>').appendTo(composeButton);
+    $('<i class="far fa-edit"></i>').prependTo(composeButton);
     $('.compose-button').click(function () {
         $('.new-tweet').toggle(function () {
             $('.tweet-input').focus();
